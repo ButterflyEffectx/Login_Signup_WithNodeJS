@@ -10,29 +10,29 @@ To install and run this project,
 
 You can download the zip file or Clone the Project Repository using Git with the below command:
 ```bash
-  https://github.com/ButterflyEffectx/Login_Signup_WithNodeJS.git
+https://github.com/ButterflyEffectx/Login_Signup_WithNodeJS.git
 ```
 
 Then, open the terminal in the project directory, and run the following command:
 
 ```bash
-  npm i
+npm i
 ```
 
 Once, you have installed the dependancies for the project using NodeJS, Open your MySQL DataBase using the phpMyAdmin click '+ New' and enter the following details:
 ```bash
-  Database Name: LoginSignup
-  Collection Name: LogInCollection
+Database Name: LoginSignup
+Collection Name: LogInCollection
 ```
 
 Once, you have created the Database to store all the user data, you can run the following command in the terminal of the project directory to start the ExpressJS server using nodemon:
 ```bash
-  nodemon src/index.js
+nodemon src/index.js
 ```
 
 Then, you can paste the following address into your browser to access the LoginSignUp Server:
 ```bash
-  http://localhost:3000/
+http://localhost:3000/
 ```
 
 
