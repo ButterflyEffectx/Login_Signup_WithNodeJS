@@ -27,7 +27,6 @@ app.post("/signup", async (req, res) => {
     });
   }
 
-  // ตรวจสอบว่า username มีอยู่แล้วหรือไม่
   const checkUserQuery = 'SELECT * FROM LogInCollection WHERE name = ?';
   connection.query(checkUserQuery, [name], (err, result) => {
     if (err) {
@@ -39,7 +38,6 @@ app.post("/signup", async (req, res) => {
         error: "Username already exists, please choose another one.",
       });
     } else {
-      // ถ้า username ไม่มีอยู่แล้ว ให้ทำการ insert ข้อมูลผู้ใช้
       const insertUser = (name, password) => {
         const query = 'INSERT INTO LogInCollection (name, password) VALUES (?, ?)';
         connection.query(query, [name, password], (err, result) => {
